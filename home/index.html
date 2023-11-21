@@ -11,24 +11,45 @@
 
 <body>
     <section class="section">
-        <h1 class="main-title">faça seu login</h1>
+        <div class="backGroundBlur">
+            <h1 class="main-title">faça seu login</h1>
 
-        <form action="#" method="post">
-            <label>
-                usuario
-                <input type="text" name="user" maxlength="10" placeholder="Usuario123">
-            </label>
+            <form action="#" method="post">
+                <div class="textTop">
+                    <label for="user">usuario</label>
+                    <input type="text" name="user" id="user" maxlength="10" placeholder="Usuario123" required>
+                </div>
 
-            <label>
-                senha
-                <input type="password" name="password">
-            </label>
+                <div class="textTop">
+                    <label for="password">senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
-            <div>
-               <label for="js">JavaScript</label>
-               <input type="checkbox" id="js" >
-            </div>
-        </form>
+                <div class="lang">
+                    <label for="js">JavaScript</label>
+                    <input type="checkbox" name="JavaScript" id="js">
+
+                    <label for="python">Python</label>
+                    <input type="checkbox" name="python" id="python">
+
+                    <label for="react">React</label>
+                    <input type="checkbox" name="react" id="react">
+                </div>
+
+                <div class="gener-options">
+                    <label for="male">Masculino</label>
+                    <input type="radio" value="Masculino" name="gener" id="male" required>
+                    <label for="woman">Feminino</label>
+                    <input type="radio" value="Feminino" name="gener" id="woman">
+                    <label for="other">Outro</label>
+                    <input type="radio" value="Outro" name="gener" id="other">
+                    <label for="preferNotSay">Prefiro não dizer</label>
+                    <input type="radio" value="naoMencionado" name="gener" id="preferNotSay">
+                </div>
+
+                <button type="submit">enviar</button>
+            </form>
+        </div>
     </section>
 </body>
 
