@@ -4,16 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleNewAcount.css">
+    <link rel="stylesheet" href="barProgressStyle.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="./javaScript.js" defer></script>
     <title>login</title>
 </head>
 
 <body>
     <section class="section">
+        <div class="progress">
+            <div class="ballStart">
+                <div class="ballProgressStart"></div>
+            </div>
+
+            <div class="ballMid">
+                <div class="ballProgressMid"></div>
+            </div>
+
+            <div class="ballEnd">
+                <div class="ballProgressEnd"></div>
+            </div>
+        </div>
         <div class="backGroundBlur">
-            <h1 class="main-title">faça seu login</h1>
-            <p class="textPresentation">Forme uma parceria conosco! venha receber previlegios unicos, caso nao tenha uma conta <a href="../newAcount/indexNewAcount.html">clique aqui</a></p>
+            <h1 class="main-title">ola seja bem vindo!</h1>
+            <p class="textPresentation">Abaixo forneça um nome de usuario e uma senha de sua prefencia e continue para
+                criar sua conta!</p>
 
             <form action="#" method="post">
                 <div class="textTop">
@@ -23,6 +40,11 @@
 
                 <div class="textTop">
                     <label for="password">senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="textTop">
+                    <label for="password">confirme sua senha</label>
                     <input type="password" id="password" name="password" required>
                 </div>
 
@@ -47,6 +69,10 @@
                     <label for="preferNotSay">Prefiro não dizer</label>
                     <input type="radio" value="naoMencionado" name="gener" id="preferNotSay">
                 </div>
+
+                <button type="button">
+                    <span class="material-symbols-outlined">double_arrow</span>
+                </button>
 
                 <button type="submit" class="displayNone">enviar</button>
             </form>

@@ -27,9 +27,9 @@
     background-color: rgba(0, 0, 0, 0.199);
     padding: 2em;
     border: 0.1em solid black;
-    border-radius: 0.3em;
-    width: 450px;
-    height: 450px;
+    border-top: none;
+    border-radius: 0 0 0.3em 0.3em;
+    max-width: 450px;
 }
 
 .main-title {
@@ -46,13 +46,6 @@
     letter-spacing: 0.05em;
     line-height: 1.6em;
     padding: 1em 0;
-}
-
-.textPresentation a,
-.textPresentation a::selection,
-.textPresentation a:focus{
-    color: #4a4af8;
-    font-weight: 700;
 }
 
 form {

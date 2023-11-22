@@ -1,0 +1,20 @@
+.progress {
+    padding: 0.4em 2em;
+    border: black 0.1em solid;
+    border-bottom: 0.2em solid rgba(0, 0, 0, 0.404);
+    width: 100%;
+    max-width: 450px;
+    background-color: rgb(10, 10, 10);
+    min-height: 3em;
+    position: relative;
+}
+
+.progress::after {
+    content: "";
+    background-color: greenyellow;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+}
