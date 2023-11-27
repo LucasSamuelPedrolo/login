@@ -8,24 +8,15 @@
     <link rel="stylesheet" href="barProgressStyle.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="./javaScript.js" defer></script>
+    <script src="./scriptNewAcount.js" defer></script>
     <title>login</title>
 </head>
 
 <body>
     <section class="section">
         <div class="progress">
-            <div class="ballStart">
-                <div class="ballProgressStart"></div>
-            </div>
-
-            <div class="ballMid">
-                <div class="ballProgressMid"></div>
-            </div>
-
-            <div class="ballEnd">
-                <div class="ballProgressEnd"></div>
-            </div>
+            <span class="progressCounter">1 de 3</span>
+            <div class="progressMeter"></div>
         </div>
         <div class="backGroundBlur">
             <h1 class="main-title">ola seja bem vindo!</h1>
@@ -44,8 +35,8 @@
                 </div>
 
                 <div class="textTop">
-                    <label for="password">confirme sua senha</label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="passwordConfirm">confirme sua senha</label>
+                    <input type="password" id="passwordConfirm" required>
                 </div>
 
                 <div class="lang displayNone">

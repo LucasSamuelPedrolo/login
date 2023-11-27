@@ -9,6 +9,7 @@
     --textDefaultWhite: #fff;
 }
 
+
 .section {
     display: flex;
     flex-direction: column;
@@ -20,16 +21,18 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0 auto;
 }
 
 .backGroundBlur {
     backdrop-filter: blur(15px);
-    background-color: rgba(0, 0, 0, 0.199);
+    background-color: rgba(0, 0, 0, 0.623);
     padding: 2em;
     border: 0.1em solid black;
     border-top: none;
     border-radius: 0 0 0.3em 0.3em;
     max-width: 450px;
+    box-shadow: inset 0rem 0rem 4rem 0.5rem rgb(0, 0, 0);
 }
 
 .main-title {
@@ -68,6 +71,7 @@ form {
 
 .textTop input {
     background-color: transparent;
+    height: 2em;
     color: var(--textDefaultWhite);
     border: none;
     border-bottom: 1px rgb(255, 255, 255) solid;
@@ -75,8 +79,12 @@ form {
 }
 
 .textTop input:focus {
-    transition: font-size 300ms ease-in-out;
+    transition: font-size 200ms ease-in-out;
     font-size: 1.2em;
+}
+
+.textTop input:focus, input{
+    border-bottom: rgb(11, 216, 11) 1px solid;
 }
 
 .displayNone {
